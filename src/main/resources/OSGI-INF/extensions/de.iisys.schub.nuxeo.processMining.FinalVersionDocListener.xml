@@ -1,0 +1,12 @@
+<component name="de.iisys.schub.nuxeo.processMining.listener.contrib.FinalVersionDocListener">
+
+  <extension target="org.nuxeo.ecm.core.event.EventServiceComponent"
+    point="listener">
+
+    <listener name="finalversiondoclistener" async="true" postCommit="true"
+      class="de.iisys.schub.nuxeo.processMining.FinalVersionDocListener" priority="100">
+      <event>documentModified</event>
+    </listener>
+  </extension>
+
+</component>
